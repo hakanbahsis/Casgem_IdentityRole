@@ -1,0 +1,38 @@
+﻿@model RegisterViewModel
+@{
+    ViewData["Title"] = "Kullanıcı Kayıt";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-4 offset-4">
+        <h1 class="display-4 border-bottom text-center pb-2">@ViewData["Title"]</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-4 offset-4">
+
+<form method="post" class="form-control">
+    <label class="form-label">Adı</label>
+    <input type="text" asp-for="Name" class="form-control" />
+    <br />
+    <label class="form-label">Soyadı</label>
+    <input type="text" asp-for="Surname" class="form-control" />
+    <br />
+    <label class="form-label">Kullanıcı Adı</label>
+    <input type="text" asp-for="Username" class="form-control" />
+    <br />
+    <label class="form-label">Mail</label>
+    <input type="text" asp-for="Mail" class="form-control" />
+    <br />
+    <label class="form-label">Parola</label>
+    <input type="password" asp-for="Password" class="form-control" />
+    <br />
+
+    <button type="submit" class="btn btn-primary d-block"><i class="fa-solid fa-paper-plane me-2"></i>Kaydet</button>
+
+</form>
+
+</div>
+</div>

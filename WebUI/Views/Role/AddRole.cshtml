@@ -1,0 +1,21 @@
+﻿@model AddRoleViewModel
+@{
+    ViewData["Title"] = "Yeni Rol Ekleme";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row">
+    <div class="col-4 offset-4">
+        <h1 class="display-4 border-bottom text-center pb-2">@ViewData["Title"]</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-4 offset-4">
+        <form method="post" class="form-control">
+            <label class="form-label">Rol Adı</label>
+            <input type="text" asp-for="Name" class="form-control" placeholder="Rol Adı"/>
+            <br />
+            <button type="submit" class="btn btn-primary d-block"><i class="fa-solid fa-paper-plane me-2"></i>Kaydet</button>
+        </form>
+    </div>
+</div>
